@@ -21,8 +21,17 @@ export class QuoteComponent implements OnInit {
 
   viewDetails(index){
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
+
   }
 
+  upVotesCount(index){
+    this.quotes[index].upVotes = this.quotes[index].upVotes + 1;
+  }
+
+  downVotesCount(index){
+    this.quotes[index].downVotes = this.quotes[index].downVotes - 1;
+  }
+  
   constructor() { }
 
   ngOnInit(): void {
