@@ -9,6 +9,7 @@ import {Quote} from '../quote';
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote:Quote;
+  @Output() isComplete = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
