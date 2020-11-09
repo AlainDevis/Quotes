@@ -10,9 +10,10 @@
       </div>
       <div class="col-md-6 Quotes">
           <div *ngFor='let quote of quotes' class="box">
-            <p class="text-left">"{{quote.quote}}"- {{quote.author}}</p>
-            <p class="text-right">Posted by {{quote.name}}</p>
-            <p>UpVotes  DownVotes</p>
+            <p class="text-left">"{{quote.quote}}"</p>  
+            <!-- <p class="text-left">"{{quote.quote}}"- {{quote.author}}</p>
+            <p class="text-right">Posted by {{quote.name}}</p>-->
+            <p> <button>UpVotes</button>  <button>DownVotes</button></p> 
           </div>
       </div>
     </div>
