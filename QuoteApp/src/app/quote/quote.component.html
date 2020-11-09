@@ -14,7 +14,7 @@
             <p> <button (click)='upVotesCount(i)' class=" btn btn-success">UpVotes</button>
                 <button (click)='downVotesCount(i)' class="btn btn-danger">DownVotes</button>
                 <button (click)='viewDetails(i)' class="btn btn-primary">View Details</button>
-                <app-quote-detail *ngIf='quote.showDetails' [quote]='quote'></app-quote-detail></p> 
+                <app-quote-detail *ngIf='quote.showDetails' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail></p> 
           </div>
       </div>
     </div>
