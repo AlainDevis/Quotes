@@ -5,10 +5,14 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 Form">
           <app-quote-form></app-quote-form>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 Quotes">
+          <div *ngFor='let quote of quotes' class="box">
+            <p class="text-left">"{{quote.quote}}"- {{quote.author}}</p>
+            <p class="text-right">Posted by {{quote.name}}</p>
+          </div>
       </div>
     </div>
   </div>
