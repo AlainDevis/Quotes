@@ -2,7 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .header{
-    background-color: green;
+    background-color: #226332;
     height: 100px;
     color: white;
 }
@@ -11,8 +11,18 @@
     margin-top: 30px;
 }
 
-.box{
-    /* border: 1px solid black; */
-    /* margin: 10px; */
+/* .box{
+    border: 1px solid black;
+    margin: 10px;
     background-color: rgb(162, 183, 209);
+} */
+
+.Form{
+    margin-top: 10px;
+    background-color: rgb(216, 221, 228);
+}
+
+.Quotes{
+    margin-top: 10px;
+    background-color: rgb(216, 221, 228);
 }
