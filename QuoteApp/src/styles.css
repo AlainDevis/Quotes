@@ -11,11 +11,15 @@
     margin-top: 30px;
 }
 
-/* .box{
-    border: 1px solid black;
+.box{
+    /* border: 1px solid; */
+    border-radius: 8px;
     margin: 10px;
-    background-color: rgb(162, 183, 209);
-} */
+    background-color: rgb(216, 221, 228);
+}
+.box > p{
+    margin:5px;
+}
 
 .Form{
     margin-top: 10px;
@@ -24,5 +28,16 @@
 
 .Quotes{
     margin-top: 10px;
-    background-color: rgb(216, 221, 228);
+    /* background-color: rgb(216, 221, 228); */
+}
+
+.footer{
+    background-color: #226332;
+    height: 50px;
+    color: white;
+}
+
+.footer > p{
+    margin-top: 15px;
+    font-weight: 20px;
 }
