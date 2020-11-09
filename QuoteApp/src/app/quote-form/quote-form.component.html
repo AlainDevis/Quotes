@@ -1,15 +1,15 @@
 <div class="container-fluid">
     <h2 class="text-center">Post Your Quote Here</h2>
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote' #quoteForm='ngForm'>
         <div class="form-group">
   
             <label for="name">Your Name</label>
-            <input type="text" required class="form-control" id="name">
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" #name='ngModel'>
         </div>
         <div class="form-group">
   
             <label for="name">Author Name</label>
-            <input type="text" required class="form-control" id="Authorname">
+            <input type="text" required class="form-control" id="Author">
   
         </div>
         <div class="form-group">
@@ -19,7 +19,7 @@
   
         </div>
         <div class="form-group">
-            <button class="btn btn-primary">Post</button>
+            <button type="submit" class="btn btn-primary">Post</button>
         </div>
     </form>
   </div>

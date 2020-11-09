@@ -19,6 +19,12 @@ export class QuoteComponent implements OnInit {
     new Quote(7,"Alain Devis","Robert Louis Stevenson","Don't judge each day by the harvest you reap but by the seeds that you plant")
   ]
 
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    this.quotes.push(quote)
+  }
+
   viewDetails(index){
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
 
