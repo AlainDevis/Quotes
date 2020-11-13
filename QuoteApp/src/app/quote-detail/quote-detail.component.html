@@ -1,5 +1,6 @@
  <p class="text-left">Author:{{quote.author}}</p>
 <p class="text-left">Posted by {{quote.name}}</p>
-<p>UpVotes: {{quote.upVotes}}</p>
+<p #upvotes>UpVotes: {{quote.upVotes}}</p>
 <p>Downvotes: {{quote.downVotes}}</p>
+<p>Added {{quote.time | minCount }} minutes ago</p>
 <button  (click) ='quoteDelete(true)' class="btn btn-danger">Delete Quote</button>

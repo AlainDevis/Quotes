@@ -9,6 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { HighlightDirective } from './highlight.directive';
+import { MinCountPipe } from './min-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './highlight.directive';
     QuoteComponent,
     QuoteFormComponent,
     QuoteDetailComponent,
-    HighlightDirective
+    HighlightDirective,
+    MinCountPipe
   ],
   imports: [
     BrowserModule,
